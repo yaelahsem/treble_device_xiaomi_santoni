@@ -499,6 +499,7 @@ PRODUCT_PACKAGES += \
     hostapd \
     dhcpcd.conf \
     wificond \
+    wifilogd \
     wpa_supplicant \
     wpa_supplicant.conf
 
@@ -516,6 +517,11 @@ ifeq ($(WITH_GAPPS),true)
 PRODUCT_PACKAGES += \
     PixelLiveWallpaperPrebuilt
 endif
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/wifi/hostapd_default.conf:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd_default.conf \
+    $(LOCAL_PATH)/wifi/hostapd.accept:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd.accept \
+    $(LOCAL_PATH)/wifi/hostapd.deny:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd.deny
 
 # Wi-Fi Display
 PRODUCT_BOOT_JARS += \
