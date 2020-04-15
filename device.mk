@@ -534,3 +534,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     XiaomiParts \
     XiaomiAddon
+
+#################################################################################
+# This is the End of target.mk file.
+# Now, Pickup other split product.mk files:
+#################################################################################
+# TODO: Relocate the system product.mk files pickup into qssi lunch, once it is up.
+$(call inherit-product-if-exists, vendor/qcom/defs/product-defs/system/*.mk)
+$(call inherit-product-if-exists, vendor/qcom/defs/product-defs/vendor/*.mk)
+#################################################################################
+TARGET_COMMON_QTI_COMPONENTS := \
+    bt \
+    perf
