@@ -34,7 +34,7 @@ $(call inherit-product, device/xiaomi/santoni/full_santoni.mk)
 PRODUCT_DEVICE := santoni
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4X
-PRODUCT_NAME := havoc_santoni
+PRODUCT_NAME := xperience_santoni
 BOARD_VENDOR := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 
