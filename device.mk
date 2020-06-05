@@ -22,9 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, vendor/xiaomi/santoni/santoni-vendor.mk)
 
 #HAls
-PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/display
-PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/audio
-PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/media
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
