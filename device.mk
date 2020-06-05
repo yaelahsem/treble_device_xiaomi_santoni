@@ -105,7 +105,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@5.0-impl \
     android.hardware.soundtrigger@2.2-impl \
     android.hardware.broadcastradio@1.0-impl
-	
+
 # ANT
 PRODUCT_PACKAGES += \
     AntHalService
@@ -154,7 +154,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     AntHalService \
     com.dsi.ant.antradio_library
-	
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     libldacBT_dec
@@ -326,7 +326,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     com.android.media.swcodec \
     libsfplugin_ccodec
-	
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     $(LOCAL_PATH)/configs/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
@@ -471,6 +471,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
+
+# IMS
+PRODUCT_PACKAGES += \
+    ims-ext-common \
+    ims_ext_common.xml
 
 # USB HAL
 PRODUCT_PACKAGES += \
